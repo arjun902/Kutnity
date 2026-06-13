@@ -67,7 +67,7 @@ const articles = [
   },
   {
     title: "Explainer: How to Read a Central Bank Monetary Policy Statement",
-    category: "Explainers",
+    category: "Explainer",
     slug: "article.html",
     summary: "A visual guide to liquidity, credit, inflation, policy rates and banking-sector risk for non-specialist readers.",
     author: "Explainer Desk",
@@ -77,6 +77,71 @@ const articles = [
     format: "Explainer",
     read: "4 min read",
     image: "assets/img/explainer.svg"
+  },
+  {
+    title: "Arts and Public Memory: Why Cultural Policy Matters",
+    category: "Arts",
+    slug: "category.html?topic=Arts",
+    summary: "Museums, archives, cinema and public art are part of how a country remembers itself and explains itself to the world.",
+    author: "Culture Desk",
+    credential: "Arts and Society",
+    date: "6 Jun 2026",
+    updated: "6 Jun 2026, 10:20 NPT",
+    format: "Essay",
+    read: "5 min read",
+    image: "assets/img/explainer.svg"
+  },
+  {
+    title: "Lifestyle and Cities: How Daily Habits Shape Urban Policy",
+    category: "Lifestyle",
+    slug: "category.html?topic=Lifestyle",
+    summary: "Transport, housing, food, work and public space reveal whether cities are designed for ordinary life.",
+    author: "Urban Life Desk",
+    credential: "Lifestyle and Cities",
+    date: "5 Jun 2026",
+    updated: "5 Jun 2026, 17:00 NPT",
+    format: "Feature",
+    read: "6 min read",
+    image: "assets/img/pattern.svg"
+  },
+  {
+    title: "Sports Governance: What Leagues Need Beyond Match Results",
+    category: "Sports",
+    slug: "category.html?topic=Sports",
+    summary: "Sports coverage should follow institutions, finance, player welfare, infrastructure and accountability.",
+    author: "Sports Desk",
+    credential: "Sports Governance",
+    date: "5 Jun 2026",
+    updated: "5 Jun 2026, 13:30 NPT",
+    format: "Analysis",
+    read: "4 min read",
+    image: "assets/img/policy.svg"
+  },
+  {
+    title: "Podcast Brief: Nepal's Budget Debate in Fifteen Minutes",
+    category: "Podcast",
+    slug: "category.html?topic=Podcast",
+    summary: "A concise audio format for readers who want the argument, the numbers and the political context.",
+    author: "Audio Desk",
+    credential: "Podcast Unit",
+    date: "4 Jun 2026",
+    updated: "4 Jun 2026, 09:45 NPT",
+    format: "Podcast",
+    read: "15 min listen",
+    image: "assets/img/logo.svg"
+  },
+  {
+    title: "Video Explainer: How Policy Moves Through Parliament",
+    category: "Video",
+    slug: "category.html?topic=Video",
+    summary: "A visual format for turning institutional process, lawmaking and accountability into plain language.",
+    author: "Video Desk",
+    credential: "Visual Explainers",
+    date: "4 Jun 2026",
+    updated: "4 Jun 2026, 08:15 NPT",
+    format: "Video",
+    read: "3 min watch",
+    image: "assets/img/hero-policy.svg"
   },
   {
     title: "NEPSE Market Context: What Retail Investors Should Track First",
@@ -144,7 +209,7 @@ const aiKnowledge = [
 function qs(selector, root = document) { return root.querySelector(selector); }
 function qsa(selector, root = document) { return [...root.querySelectorAll(selector)]; }
 
-const navCategories = ["Policy", "Economy", "Technology", "Geopolitics", "Explainers"];
+const navCategories = ["Policy", "Economy", "Technology", "Geopolitics", "Arts", "Lifestyle", "Sports", "Explainer", "Podcast", "Video"];
 const coverageCopy = {
   Policy: {
     title: "Policy intelligence",
@@ -162,9 +227,29 @@ const coverageCopy = {
     title: "Geopolitics",
     desc: "South Asia, India-China-Nepal dynamics, foreign affairs, energy corridors and strategic autonomy."
   },
-  Explainers: {
-    title: "Visual explainers",
+  Arts: {
+    title: "Arts and culture",
+    desc: "Culture, public memory, creative industries, books, film, archives and the politics of identity."
+  },
+  Lifestyle: {
+    title: "Lifestyle and cities",
+    desc: "Urban life, travel, food systems, work, public space and the everyday experience of policy."
+  },
+  Sports: {
+    title: "Sports governance",
+    desc: "Sports institutions, leagues, athlete welfare, infrastructure, accountability and public investment."
+  },
+  Explainer: {
+    title: "Explainers",
     desc: "Simple, data-backed explanations of complex policy, economy, technology and regional issues."
+  },
+  Podcast: {
+    title: "Podcasts",
+    desc: "Audio briefings, interviews and conversations for readers who want context in a compact format."
+  },
+  Video: {
+    title: "Video",
+    desc: "Visual explainers, interviews and short documentary-style coverage of major public issues."
   }
 };
 
@@ -189,6 +274,7 @@ function setupNavigation() {
     if (navCategories.includes(label)) link.href = `category.html?topic=${encodeURIComponent(label)}`;
     if (label === 'Data') link.href = page === 'index.html' ? '#data-intelligence' : 'index.html#data-intelligence';
     if (label === 'Opinion') link.href = page === 'index.html' ? '#opinion-analysis' : 'index.html#opinion-analysis';
+    if (label === 'AI Brief') link.href = page === 'index.html' ? '#kutniti-ai' : 'index.html#kutniti-ai';
     link.classList.remove('active');
   });
 
@@ -217,7 +303,7 @@ function setupCoverageIntro() {
     if (eyebrow) eyebrow.textContent = `${topic} selected`;
   } else {
     title.textContent = "All KUTNITI coverage";
-    desc.textContent = "Use the top navigation to switch between Policy, Economy, Technology, Geopolitics and Explainers. The selected section stays active in the header.";
+    desc.textContent = "Use the top navigation to switch between Policy, Economy, Technology, Geopolitics, Arts, Lifestyle, Sports, Explainer, Podcast and Video. The selected section stays active in the header.";
     if (eyebrow) eyebrow.textContent = "Selected coverage";
   }
 }
