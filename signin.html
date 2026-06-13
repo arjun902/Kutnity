@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In | KUTNITI</title>
+  <meta name="description" content="KUTNITI sign-in prototype with security requirements for production.">
+  <link rel="canonical" href="https://www.kutniti.com/signin">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main id="main">
+    <section class="page-hero"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Sign In</div><span class="eyebrow">Account</span><h1>Sign in to KUTNITI.</h1><p>This static prototype shows the account entry point. Production should require HTTPS, MFA for admins, RBAC and rate limiting.</p></div></section>
+    <section class="section compact"><div class="container contact-grid">
+      <form class="form-card"><div class="form-field"><label>Email</label><input type="email" required></div><div class="form-field"><label>Password</label><input type="password" required></div><button class="btn-primary" type="button">Sign In</button><p class="form-note">Demo only. Connect to a secure authentication backend before launch.</p></form>
+      <aside class="trust-card"><h3>Security baseline</h3><p>MFA, strong password rules, session expiration, CSRF protection, refresh-token rotation and audit logs are required for production.</p></aside>
+    </div></section>
+  </main>
+</body>
+</html>
