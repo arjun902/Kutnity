@@ -273,6 +273,7 @@ function setupNavigation() {
     const label = link.textContent.trim();
     if (navCategories.includes(label)) link.href = `category.html?topic=${encodeURIComponent(label)}`;
     if (label === 'Data') link.href = page === 'index.html' ? '#data-intelligence' : 'index.html#data-intelligence';
+    if (label === 'Multimedia') link.href = page === 'index.html' ? '#multimedia-studio' : 'index.html#multimedia-studio';
     if (label === 'Opinion') link.href = page === 'index.html' ? '#opinion-analysis' : 'index.html#opinion-analysis';
     if (label === 'AI Brief') link.href = page === 'index.html' ? '#kutniti-ai' : 'index.html#kutniti-ai';
     link.classList.remove('active');
