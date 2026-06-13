@@ -12,7 +12,7 @@
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b1f3a">
+  <meta name="theme-color" content="#111111">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -64,11 +64,11 @@
         <a href="#opinion-analysis">Opinion</a>
       </nav>
       <div class="header-actions">
-        <button class="icon-btn" id="searchOpen" aria-label="Open search">⌕</button>
-        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">◐</button>
-        <a class="ai-btn" href="#kutniti-ai">Ask AI</a>
+        <button class="icon-btn" id="searchOpen" aria-label="Open search">Search</button>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">Mode</button>
+        <a class="ai-btn" href="#kutniti-ai">Briefing</a>
         <a class="subscribe-btn" href="#newsletter">Subscribe</a>
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
       </div>
     </div>
     <nav class="container mobile-nav" id="mobileNav" aria-label="Mobile navigation">
@@ -87,8 +87,8 @@
 
   <div class="breaking" aria-label="Breaking news ticker">
     <div class="container breaking-inner">
-      <span class="breaking-label">Live</span>
-      <div class="ticker"><strong>Breaking:</strong> Nepal budget updates | Global market movement | AI regulation watch | South Asia policy decisions | FinTech security alerts</div>
+      <span class="breaking-label">Updates</span>
+      <div class="ticker"><strong>Today:</strong> Nepal budget updates | Global market movement | AI regulation watch | South Asia policy decisions | FinTech security alerts</div>
     </div>
   </div>
 
@@ -107,16 +107,16 @@
           <div class="hero-content">
             <div class="badge-row">
               <span class="badge">Lead Analysis</span>
-              <span class="badge">Policy Intelligence</span>
+              <span class="badge">Policy</span>
               <span class="badge">7 min read</span>
             </div>
             <span class="section-kicker">KUTNITI</span>
-            <h1>Strategic intelligence on policy, economy, technology and geopolitics.</h1>
-            <p>We decode the decisions, data and power shifts shaping Nepal, South Asia and the world.</p>
+            <h1>Policy, economy and power in Nepal and South Asia.</h1>
+            <p>Clear reporting and analysis on the decisions, data and institutions shaping public life.</p>
             <div class="hero-cta">
               <a class="btn-primary" href="article.html">Read Today's Brief</a>
-              <a class="btn-secondary" href="#data-intelligence">Explore Data Stories</a>
-              <a class="btn-secondary" href="#kutniti-ai">Ask KUTNITI AI</a>
+              <a class="btn-secondary" href="#data-intelligence">Data Stories</a>
+              <a class="btn-secondary" href="#opinion-analysis">Opinion</a>
             </div>
             <div class="hero-kpis" aria-label="KUTNITI editorial focus">
               <div><span>Coverage pillars</span><strong>5</strong></div>
@@ -170,9 +170,9 @@
         <div class="ai-grid">
           <div>
             <div class="ai-orb" aria-hidden="true"></div>
-            <span class="eyebrow">KUTNITI AI</span>
-            <h2>Ask policy questions and get fast strategic briefs.</h2>
-            <p>Ask for a five-point article summary, a Nepali explanation, policy impact, risk flags or related KUTNITI stories. Production AI must answer only from KUTNITI articles, official documents and cited sources.</p>
+            <span class="eyebrow">Briefing Desk</span>
+            <h2>Ask for structured policy context.</h2>
+            <p>Use the briefing desk for short summaries, Nepal impact, risk flags and related KUTNITI stories. Published briefings should remain source-backed and editor-reviewed.</p>
           </div>
           <div class="ai-box">
             <form class="ai-input-row" id="aiForm">
@@ -187,11 +187,11 @@
               <button data-prompt="Summarize this article in 5 points.">Article summary</button>
               <button data-prompt="How should comments be moderated?">Moderation</button>
             </div>
-            <div class="ai-output" id="aiOutput">Ask a question to generate a strategic AI-style brief.</div>
+            <div class="ai-output" id="aiOutput">Ask a question to generate a concise editorial brief.</div>
           </div>
         </div>
         <div class="ai-feature-grid">
-          <article class="ai-feature-card"><h3>AI Article Summary</h3><p>Quick summary, why it matters, background, Nepal impact and key numbers.</p></article>
+          <article class="ai-feature-card"><h3>Article Summary</h3><p>Quick summary, why it matters, background, Nepal impact and key numbers.</p></article>
           <article class="ai-feature-card"><h3>Research Topic Pages</h3><p>Articles, timelines, FAQs, datasets and editor-reviewed technology explainers.</p></article>
           <article class="ai-feature-card"><h3>Editor SEO Brief</h3><p>Suggested title, meta description, keywords, links, schema and fact-check status.</p></article>
         </div>
@@ -206,7 +206,7 @@
             <h2>Top stories and analysis</h2>
             <p>Structured coverage for readers who want context, not just headlines.</p>
           </div>
-          <a class="btn-text" href="category.html">View all stories →</a>
+          <a class="btn-text" href="category.html">View all stories -></a>
         </div>
         <div class="article-grid" id="articleGrid"></div>
       </div>
@@ -344,7 +344,7 @@
         <div>
           <span class="eyebrow">Daily Brief</span>
           <h2>Get the KUTNITI Daily Brief</h2>
-          <p>A sharp, data-backed summary of policy, economy, technology and global affairs — delivered every morning.</p>
+          <p>A sharp, data-backed summary of policy, economy, technology and global affairs delivered every morning.</p>
           <div class="newsletter-segments"><span>Daily Brief</span><span>Weekly Policy Brief</span><span>Economy Radar</span></div>
         </div>
         <div>
@@ -362,7 +362,7 @@
     <div class="container footer-grid">
       <div>
         <a class="logo" href="index.html"><span class="logo-mark">K</span><span>KUTNITI<small>Strategic Intelligence</small></span></a>
-        <p>KUTNITI is an AI-ready strategic media platform covering policy, economy, technology and geopolitics for Nepal, South Asia and the world.</p>
+        <p>KUTNITI is a strategic media platform covering policy, economy, technology and geopolitics for Nepal, South Asia and the world.</p>
       </div>
       <div>
         <h4>Coverage</h4>
