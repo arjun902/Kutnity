@@ -45,23 +45,6 @@ Then open:
 http://localhost:5500
 ```
 
-## Production notes
 
-This is a static prototype. For production, connect:
-
-- CMS: WordPress Headless, Strapi, Payload CMS, Directus or Sanity
-- Backend: Node.js/NestJS, Laravel or Django
-- AI: RAG backend using verified KUTNITI content and official documents
-- Search: Meilisearch, Typesense or Algolia
-- Newsletter: Mailchimp, Brevo, ConvertKit or custom CRM
-- Analytics: Plausible, Matomo or GA4
-- Hosting: Vercel, Netlify, Cloudflare Pages or Nginx VPS
-
-## Important replacements before launch
-
-- Replace demo email addresses.
-- Replace SVG placeholder images with real editorial images and charts.
-- Replace demo article content with real articles.
-- Update sitemap URLs after final routing.
 - Add real author profiles and editorial ownership details.
 - Review privacy and terms pages legally.
