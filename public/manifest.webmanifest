@@ -1,0 +1,10 @@
+{
+  "name": "KUTNITI",
+  "short_name": "KUTNITI",
+  "description": "Strategic intelligence media platform.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f4ed",
+  "theme_color": "#0b1f3a",
+  "icons": [{"src": "assets/img/favicon.svg", "sizes": "64x64", "type": "image/svg+xml"}]
+}
