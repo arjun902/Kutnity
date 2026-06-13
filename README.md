@@ -1,41 +1,53 @@
-# KUTNITI — AI-Powered Strategic Media Website Prototype
+# KUTNITI
 
-This is a complete static front-end prototype for **KUTNITI.com**. It is designed to run directly in VS Code using Live Server or any static server.
+KUTNITI is a static editorial website for strategic analysis on Nepal, South Asia, public policy, economics, technology governance and geopolitics. The codebase is structured for fast static hosting, clear editorial navigation and search-friendly publishing.
 
-## What is included
+## Project Scope
 
-- Responsive homepage
-- Article page
-- Category/listing page with filters
-- About page
-- Editorial policy and correction policy page
-- Author page
-- Contact/advertising form page
-- Privacy and terms pages
-- 404 page
-- AI assistant simulation on the front end
-- Search overlay
-- Dark mode
-- Newsletter form simulation
-- SEO metadata and `NewsArticle` schema example
-- `robots.txt`, `sitemap.xml`, and `manifest.webmanifest`
-- Security header configs for Netlify, Vercel and Nginx
-- SEO and security checklists
+- Responsive homepage with editorial sections and topic pillars
+- Article, category, author, about, contact and policy pages
+- Search overlay and client-side interaction layer
+- Newsletter and contact form interfaces
+- Dark mode support
+- SEO metadata, sitemap, robots file and web app manifest
+- Security header configurations for Netlify, Vercel and Nginx
+- Editorial, privacy, terms, corrections and funding transparency pages
 
-## How to run in VS Code
+## Directory Structure
 
-### Option 1: Live Server extension
+```text
+.
+|-- assets/
+|   |-- css/
+|   |-- img/
+|   `-- js/
+|-- docs/
+|-- index.html
+|-- article.html
+|-- category.html
+|-- about.html
+|-- contact.html
+|-- sitemap.xml
+|-- robots.txt
+|-- netlify.toml
+|-- vercel.json
+`-- nginx-security.conf
+```
 
-1. Unzip the project.
-2. Open the folder in VS Code.
-3. Install the VS Code extension: **Live Server**.
-4. Right-click `index.html`.
-5. Click **Open with Live Server**.
+## Local Development
 
-### Option 2: Python static server
+The site is built with plain HTML, CSS and JavaScript. No build step is required.
+
+### Option 1: VS Code Live Server
+
+1. Open the project folder in VS Code.
+2. Install the Live Server extension.
+3. Right-click `index.html`.
+4. Select `Open with Live Server`.
+
+### Option 2: Python Static Server
 
 ```bash
-cd kutniti_ai_media_website
 python -m http.server 5500
 ```
 
@@ -45,6 +57,19 @@ Then open:
 http://localhost:5500
 ```
 
+## Deployment
 
-- Add real author profiles and editorial ownership details.
-- Review privacy and terms pages legally.
+This project can be deployed on Vercel, Netlify, Cloudflare Pages or any static web server. Security header examples are included for common hosting environments.
+
+## Production Integration Notes
+
+- Connect article publishing to a CMS such as WordPress Headless, Strapi, Payload CMS, Directus or Sanity.
+- Connect forms to a verified backend endpoint or a trusted form provider.
+- Use a search service such as Meilisearch, Typesense or Algolia for large content archives.
+- Integrate analytics through Plausible, Matomo or GA4.
+- Keep author details, ownership information, correction notices and publication dates accurate.
+- Review privacy, terms and advertising policies before public launch.
+
+## Editorial Standards
+
+KUTNITI is designed around source-aware analysis, transparent corrections, named authorship and clear separation between editorial work, opinion, advertising and sponsored content.

@@ -1,7 +1,7 @@
 {
   "name": "KUTNITI",
   "short_name": "KUTNITI",
-  "description": "AI-powered strategic intelligence media platform.",
+  "description": "Strategic intelligence media platform.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f7f4ed",

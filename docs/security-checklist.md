@@ -12,7 +12,7 @@
 - Validate and scan all uploaded images/files.
 - Store secrets in environment variables, never in Git.
 - Enable automated daily backups and monthly restore tests.
-- Add WAF/bot protection through Cloudflare or equivalent.
+- Add WAF and automated abuse protection through Cloudflare or an equivalent provider.
 - Keep dependency scanning and security patching active.
 
 ## AI-specific controls

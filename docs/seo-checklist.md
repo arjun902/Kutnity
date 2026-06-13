@@ -8,7 +8,7 @@
 - Article, Organization, Breadcrumb and Author structured data.
 - OpenGraph and Twitter card metadata.
 - Real About, Contact, Editorial Policy, Correction Policy and Author pages.
-- No placeholder/lorem ipsum content.
+- No filler or temporary editorial content.
 - Mobile-first responsive design.
 - Optimize Core Web Vitals: LCP, INP and CLS.
 

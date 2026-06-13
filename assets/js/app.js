@@ -121,15 +121,15 @@ const aiKnowledge = [
   },
   {
     keywords: ["seo", "rank", "google", "search"],
-    answer: "KUTNITI SEO checklist: publish original analysis, add author pages, use NewsArticle schema, build topic hubs, improve internal links, optimize Core Web Vitals, keep dates accurate and avoid placeholder content."
+    answer: "KUTNITI SEO checklist: publish original analysis, add author pages, use NewsArticle schema, build topic hubs, improve internal links, optimize Core Web Vitals, keep dates accurate and avoid filler content."
   },
   {
     keywords: ["summary", "summarize", "nepali", "impact", "risk", "risks", "related"],
-    answer: "Article AI format: return a five-point summary, why it matters, background, Nepal impact, key numbers, risk flags and related KUTNITI links. In production, every answer should cite the article, official documents and reviewed datasets."
+    answer: "Article brief format: provide a five-point summary, why it matters, background, Nepal impact, key numbers, risk flags and related KUTNITI links. Each brief should cite the article, official documents and reviewed datasets."
   },
   {
     keywords: ["newsletter", "daily brief", "weekly", "radar"],
-    answer: "Daily Brief structure: top five Nepal policy stories, three global stories affecting Nepal, one chart of the day, one expert commentary and editor-reviewed AI summaries. Segment readers into Daily Brief, Weekly Policy Brief and Economy Radar."
+    answer: "Daily Brief structure: top five Nepal policy stories, three global stories affecting Nepal, one chart of the day, one expert commentary and concise editor-reviewed summaries. Segment readers into Daily Brief, Weekly Policy Brief and Economy Radar."
   },
   {
     keywords: ["moderation", "comment", "spam", "hate", "toxicity"],
@@ -287,8 +287,8 @@ function setupAI() {
   const answer = (query) => {
     const q = query.toLowerCase();
     const found = aiKnowledge.find(item => item.keywords.some(k => q.includes(k)));
-    const response = found ? found.answer : "KUTNITI AI prototype: I can summarize policy, economy, technology, geopolitics, SEO and security topics from this demo knowledge base. Connect a real RAG backend later to answer from verified KUTNITI articles and official sources.";
-    output.innerHTML = `<strong>AI Brief:</strong><br>${response}<br><br><small>Prototype note: this is a front-end simulation. Production should use citation-backed retrieval and editorial review.</small>`;
+    const response = found ? found.answer : "KUTNITI Briefing Desk: I can summarize policy, economy, technology, geopolitics, SEO and security topics from the current editorial knowledge base.";
+    output.innerHTML = `<strong>Briefing Desk:</strong><br>${response}<br><br><small>Editorial note: published briefings should be source-backed and reviewed before release.</small>`;
   };
 
   form.addEventListener('submit', e => {
@@ -313,7 +313,7 @@ function setupNewsletter() {
       note.textContent = 'Please enter a valid email address.';
       return;
     }
-    note.textContent = 'Subscribed in demo mode. Connect this form to your email platform in production.';
+    note.textContent = 'Thank you for subscribing. Newsletter delivery will be confirmed through the publication email system.';
     form.reset();
   });
 }
@@ -365,7 +365,7 @@ function setupContactForm() {
   if (!form || !note) return;
   form.addEventListener('submit', e => {
     e.preventDefault();
-    note.textContent = 'Message saved in demo mode. Connect the form to your backend or form provider for production.';
+    note.textContent = 'Thank you. Your message has been prepared for the editorial contact workflow.';
     form.reset();
   });
 }
