@@ -10,6 +10,8 @@ export default function Footer() {
         </div>
         <div>
           <h4>Coverage</h4>
+          <Link href="/category?topic=Nepal">Nepal</Link>
+          <Link href="/category?topic=International">International</Link>
           <Link href="/category?topic=Policy">Policy</Link>
           <Link href="/category?topic=Economy">Economy</Link>
           <Link href="/category?topic=Technology">Technology</Link>

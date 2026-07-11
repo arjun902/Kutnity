@@ -8,7 +8,7 @@ export default async function CategoryPage({ searchParams }) {
   const topic = params?.topic;
   const copy = coverageCopy[topic] || {
     title: "All KUTNITI coverage",
-    desc: "Use the top navigation to switch between Policy, Economy, Technology, Geopolitics, Arts, Lifestyle, Sports, Explainer, Podcast and Video."
+    desc: "Use the top navigation to switch between Nepal, International, Policy, Economy, Technology and other coverage."
   };
   const visibleArticles = topic ? articles.filter((article) => article.category === topic) : articles;
 
@@ -26,7 +26,11 @@ export default async function CategoryPage({ searchParams }) {
         </section>
         <section className="section compact">
           <div className="container">
-            <ArticleGrid articles={visibleArticles.length ? visibleArticles : articles} />
+            {visibleArticles.length ? (
+              <ArticleGrid articles={visibleArticles} />
+            ) : (
+              <p className="empty-state">No stories are available in this section yet.</p>
+            )}
           </div>
         </section>
       </main>

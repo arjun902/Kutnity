@@ -94,14 +94,14 @@ export default function Header() {
       <div className="breaking" aria-label="News ticker">
         <div className="container breaking-inner">
           <span className="breaking-label">Updates</span>
-          <div className="ticker"><strong>Today:</strong> Nepal budget updates | Global market movement | AI regulation watch | South Asia policy decisions | FinTech security alerts</div>
+          <div className="ticker"><strong>Today:</strong> Nepal news | International updates | Economy | Policy | Technology</div>
         </div>
       </div>
 
       <div className={`search-panel${searchOpen ? " active" : ""}`} aria-hidden={!searchOpen}>
         <div className="search-box">
           <button className="close-search" onClick={() => setSearchOpen(false)}>Close</button>
-          <input value={query} onChange={(event) => setQuery(event.target.value)} type="search" placeholder="Search policy, economy, AI, geopolitics..." aria-label="Search articles" />
+          <input value={query} onChange={(event) => setQuery(event.target.value)} type="search" placeholder="Search Nepal, international, policy, economy..." aria-label="Search articles" />
           <div className="search-results">
             {matches.map((article) => (
               <Link key={article.title} href={article.href}>
